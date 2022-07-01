@@ -1,0 +1,52 @@
+/* Define root vars*/
+:root{
+    --main-bg-color: #fff;
+    --main-txt-color:#333;
+    --header-bg-color:#333;
+    --header-txt-color:#fff;
+    --content-widht:90%;
+    --content-margin-left:80px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+  .main-header{
+background-color: var(--header-bg-color);
+color: var(--header-txt-color);
+text-align: center;
+}
+.content{
+    width: var(--content-widht);
+    margin-left: var(--content-margin-left);
+}
+  .grid{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-gap: 20px;
+     
+}
+/* Define Box vars*/
+.box{
+    --box-bg-color:#ccc;
+    --box-txt-color: rgb(255, 0, 4);
+    --box-border:1px solid rgb(255, 0, 0);
+    --box-shadow-v-offset:10px;
+    --box-shadow-h-offset:5px;
+    --box-shadow-blur:5px;
+    --box-padding:10px;
+    
+    }
+.box{
+    background-color: var(--box-bg-color);
+    color: var(--box-txt-color);
+    border: var(--box-border);
+    padding: var(--box-padding);
+    box-shadow: 
+    var(--box-shadow-h-offset)
+    var(--box-shadow-v-offset)
+    var(--box-shadow-blur);
+}
+.box h1{
+    text-align: center;
+}
